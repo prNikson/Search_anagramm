@@ -12,9 +12,10 @@ private:
 	int numberLines(FILE*);
 	bool equalityOfArrs(int*, int*, int, int);
 	void print();
+	int validString(char*, int);
 public:
 	Anagramm();
 	void checkAnagramm();
-	void fileInput(char*);
-	void keyboardInput();
+	int fileInput(char*);
+	int keyboardInput();
 };
