@@ -54,6 +54,10 @@ int Anagramm::fileInput(char* name) {
 		ch = getc(file);
 		while (ch != '\n' && ch != EOF)
 		{
+			if (!((ch >= 65 && ch <= 90) || (ch >= 97 && ch <= 122))) {
+				std::cout << "Non-valid input from file" << std::endl;
+				return 0;
+			}
 			count++;
 			ch = getc(file);
 		}
